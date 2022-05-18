@@ -19,6 +19,7 @@ public class BrankController {
     public PageResult findPage(@RequestBody QueryPageBean queryPageBean){
         return brankService.findPage(queryPageBean);
     }
+    //添加
     @RequestMapping("add")
     public Result add(@RequestBody Brank brank){
          String name=brankService.findn(brank.getName());
