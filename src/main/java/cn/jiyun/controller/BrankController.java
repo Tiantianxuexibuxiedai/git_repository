@@ -25,7 +25,7 @@ public class BrankController {
         try {
             if (name==null){
                 brankService.add(brank);
-                return new Result(true,"success");
+                return new Result(true,"succes");
             }
             return new Result(false,"名称重复");
 
