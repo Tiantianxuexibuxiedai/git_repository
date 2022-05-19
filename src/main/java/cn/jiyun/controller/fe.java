@@ -12,13 +12,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("one")
-public class BrankController222 {
+public class fe {
     @Autowired
     private BrankService brankService;
     @RequestMapping("findPage")
     public PageResult findPage(@RequestBody QueryPageBean queryPageBean){
         return brankService.findPage(queryPageBean);
     }
+    //添加添加添加
+        //添加添加添加
     @RequestMapping("add")
     public Result add(@RequestBody Brank brank){
          String name=brankService.findn(brank.getName());
